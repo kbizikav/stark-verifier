@@ -1,5 +1,5 @@
 use crate::{
-    bn245_poseidon::plonky2_config::Bn254PoseidonGoldilocksConfig,
+    bn254_poseidon::plonky2_config::Bn254PoseidonGoldilocksConfig,
     types::{HashValues, MerkleCapValues},
 };
 use halo2_proofs::halo2curves::ff::PrimeField;

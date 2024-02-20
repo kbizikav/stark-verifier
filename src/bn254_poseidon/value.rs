@@ -72,7 +72,7 @@ pub fn permute_value<F: PrimeField>(state: &mut [Value<F>; T_BN254_POSEIDON]) {
 mod tests {
     use halo2_proofs::{circuit::Value, halo2curves::bn256::Fr};
 
-    use crate::bn245_poseidon::{
+    use crate::bn254_poseidon::{
         constants::T_BN254_POSEIDON, native::permute_bn254_poseidon_native,
     };
 

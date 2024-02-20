@@ -14,7 +14,7 @@ use plonky2::{
 
 use self::assigned::{AssignedExtensionFieldValue, AssignedHashValues, AssignedMerkleCapValues};
 
-use super::bn245_poseidon::plonky2_config::Bn254PoseidonHash;
+use super::bn254_poseidon::plonky2_config::Bn254PoseidonHash;
 use super::chip::goldilocks_chip::{GoldilocksChip, GoldilocksChipConfig};
 use super::chip::native_chip::utils::goldilocks_to_fe;
 

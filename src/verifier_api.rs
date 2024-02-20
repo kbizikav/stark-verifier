@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-use super::bn245_poseidon::plonky2_config::Bn254PoseidonGoldilocksConfig;
+use super::bn254_poseidon::plonky2_config::Bn254PoseidonGoldilocksConfig;
 use super::types::{
     common_data::CommonData, proof::ProofValues, verification_key::VerificationKeyValues,
 };
@@ -99,7 +99,7 @@ pub fn verify_inside_snark(
 mod tests {
     use super::{verify_inside_snark, verify_inside_snark_mock};
     use crate::{
-        bn245_poseidon::plonky2_config::{
+        bn254_poseidon::plonky2_config::{
             standard_inner_stark_verifier_config, standard_stark_verifier_config,
             Bn254PoseidonGoldilocksConfig,
         },

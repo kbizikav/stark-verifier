@@ -186,7 +186,7 @@ mod tests {
     };
 
     use crate::{
-        bn245_poseidon::plonky2_config::Bn254PoseidonPermutation,
+        bn254_poseidon::plonky2_config::Bn254PoseidonPermutation,
         chip::{
             goldilocks_chip::{GoldilocksChip, GoldilocksChipConfig},
             native_chip::{

@@ -5,7 +5,7 @@ use halo2_proofs::{
 };
 use plonky2::hash::poseidon::SPONGE_WIDTH;
 
-use crate::{bn245_poseidon::constants::T_BN254_POSEIDON, context::RegionCtx};
+use crate::{bn254_poseidon::constants::T_BN254_POSEIDON, context::RegionCtx};
 
 use super::{
     arithmetic_chip::{ArithmeticChip, ArithmeticChipConfig},

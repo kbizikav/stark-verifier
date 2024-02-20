@@ -7,7 +7,7 @@ use halo2_proofs::{
 };
 use std::marker::PhantomData;
 
-use crate::bn245_poseidon::{
+use crate::bn254_poseidon::{
     constants::{
         MDS_MATRIX_BG, ROUND_CONSTANTS_BG, R_F_BN254_POSEIDON, R_P_BN254_POSEIDON, T_BN254_POSEIDON,
     },
@@ -243,7 +243,7 @@ mod tests {
         plonk::{Circuit, ConstraintSystem, Error},
     };
 
-    use crate::bn245_poseidon::native::permute_bn254_poseidon_native;
+    use crate::bn254_poseidon::native::permute_bn254_poseidon_native;
 
     use super::{PoseidonBn254Chip, PoseidonBn254ChipConfig};
 

@@ -1,4 +1,4 @@
-use crate::bn245_poseidon::plonky2_config::{Bn254PoseidonGoldilocksConfig, Bn254PoseidonHash};
+use crate::bn254_poseidon::plonky2_config::{Bn254PoseidonGoldilocksConfig, Bn254PoseidonHash};
 use crate::chip::goldilocks_chip::{GoldilocksChip, GoldilocksChipConfig};
 use crate::chip::native_chip::utils::goldilocks_to_fe;
 

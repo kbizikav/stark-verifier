@@ -1,4 +1,4 @@
-pub mod bn245_poseidon;
+pub mod bn254_poseidon;
 pub mod chip;
 pub mod context;
 pub mod types;
