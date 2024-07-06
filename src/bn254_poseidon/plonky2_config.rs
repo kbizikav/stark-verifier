@@ -14,6 +14,7 @@ use plonky2::{
         config::{GenericConfig, Hasher},
     },
 };
+use serde::{Deserialize, Serialize};
 
 use super::{
     constants::T_BN254_POSEIDON,
@@ -91,7 +92,7 @@ impl<T: Copy + Debug + Default + Eq + Permuter + Send + Sync> PlonkyPermutation<
     }
 }
 
-#[derive(Copy, Clone, Debug, Eq, PartialEq)]
+#[derive(Copy, Clone, Debug, Eq, PartialEq, Serialize, Deserialize)]
 pub struct Bn254PoseidonHash;
 impl Hasher<GoldilocksField> for Bn254PoseidonHash {
     const HASH_SIZE: usize = 4 * 8;
@@ -106,7 +107,7 @@ impl Hasher<GoldilocksField> for Bn254PoseidonHash {
     }
 }
 
-#[derive(Debug, Copy, Clone, Eq, PartialEq)]
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Serialize, Deserialize)]
 pub struct Bn254PoseidonGoldilocksConfig;
 impl GenericConfig<2> for Bn254PoseidonGoldilocksConfig {
     type F = GoldilocksField;
