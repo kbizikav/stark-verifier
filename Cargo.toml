@@ -8,7 +8,7 @@ description = "Halo2 verifier for aggregated Plonky2 Semaphore proof"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-plonky2={git="https://github.com/kbizikav/plonky2", default-features = false }
+plonky2 = { git="https://github.com/InternetMaximalism/polygon-plonky2.git", branch="intmax2-dev"}
 anyhow = "1.0.56"   
 lazy_static = "1.4.0"
 halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", features = ["dev-graph"], tag = "v2023_04_20" }
@@ -27,3 +27,4 @@ derive_more = "0.99.17"
 num = { version = "0.4", default-features = false, features = ["rand"] }
 serde = { version = "1.0.192", features = ["derive"] }
 serde_json = "1.0.108"
+
